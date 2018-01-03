@@ -11,6 +11,8 @@ bot.start((ctx) => {
 
 bot.command('help', (ctx) => ctx.reply('Try send a sticker!'))
 bot.hears('hi', (ctx) => ctx.reply('Hey there!'))
+bot.hears('Id', (ctx) => ctx.reply(ctx.from.id))
+bot.hears('id', (ctx) => ctx.reply(ctx.from.id))
 bot.hears(/buy/i, (ctx) => ctx.reply('Buy-buy!'))
 bot.on('sticker', (ctx) => ctx.reply('👍'))
 
